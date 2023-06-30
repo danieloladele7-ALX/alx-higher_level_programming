@@ -16,6 +16,12 @@ set colorcolumn=70,80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 highlight Comment ctermfg=red
 
+" Syntax highlight
+" Default highlight is better than polyglot
+" polyglot breaks markdown fences
+let g:polyglot_disabled = ['python', 'markdown', 'mkd']
+let python_highlight_all = 1
+
 " Start Plugin Management
 call plug#begin('/plugged')
 
@@ -103,8 +109,3 @@ if exists("*fugitive#statusline")
 	set statusline+=%{fugitive#statusline()}
 endif
 
-" Syntax highlight
-" Default highlight is better than polyglot
-" polyglot breaks markdown fences
-let g:polyglot_disabled = ['python', 'markdown', 'mkd']
-let python_highlight_all = 1
