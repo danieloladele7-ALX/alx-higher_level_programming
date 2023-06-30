@@ -3,6 +3,10 @@
 - takes in a URL,
 - sends a request to the URL and displays the value
 - of the X-Request-Id variable found in the header ofthe response.
+REQ:
+- The value of this variable is different for each request
+- You must use urllib and sys ONLY
+- You must use the with statement
 """
 import sys
 import urllib.request

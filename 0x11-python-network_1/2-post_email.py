@@ -4,6 +4,10 @@
 - sends a POST request to the passed URL
 - takes email as a parameter
 - displays the body of the response
+REQ:
+- Must be sent in an email variable
+- You must use urllib and sys ONLY
+- You must use the with statement
 """
 import sys
 import urllib.parse

@@ -3,6 +3,9 @@
 - fetches https://intranet.hbtn.io/status.
 - uses urlib package.
 - must include with.
+REQ:
+- You must use urllib ONLY
+- You must use the with statement
 """
 
 
