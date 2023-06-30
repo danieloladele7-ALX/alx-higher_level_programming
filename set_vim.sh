@@ -1,4 +1,4 @@
-#!/usr/bash
+#!/bin/bash
 
 # install neovim
 apt-get install neovim -y
