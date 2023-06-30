@@ -7,9 +7,9 @@
 
 
 if __name__ == '__main__':
-    import urllib.request as req
+    import urllib.request
 
-    with req.urlopen('https://intranet.hbtn.io/status') as r:
+    with urllib.request.urlopen('https://intranet.hbtn.io/status') as r:
         content = r.read()
         print("Body response:")
         print("\t- type: {}".format(type(content)))
