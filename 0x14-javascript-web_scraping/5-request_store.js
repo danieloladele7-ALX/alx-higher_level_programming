@@ -13,6 +13,9 @@ request(url, function (error, response, body) {
   if (error) {
     console.log(error);
   } else {
-    fs.writeFile(filePath, body, 'utf-8');
+    fs.writeFile(filePath, body, 'utf-8', (err) => {
+      if (err) throw err;
+      console.log('The file has been saved!');
+    });
   }
 });
